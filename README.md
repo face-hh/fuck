@@ -5,4 +5,4 @@ An actually good, heavily opinionated Linux distro.
 
 Download: https://fucklinux.org
 
-As seen on YouTube https://youtu.be/notThereYet
+As seen on YouTube https://youtu.be/YesItIs
