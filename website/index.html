@@ -1,35 +1,123 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuck Linux</title>
-
     <link rel="icon" href="finger.png">
+
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
     <style>
-        body {
+        /* Reset and base styles */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 80px;
+            font-weight: 800;
+            color: #ff4b5c;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            font-size: 22px;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff4b5c;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background-color: #ff2a3c;
+            transform: translateY(-3px);
+        }
+
+        .github-link {
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .github-link:hover {
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 50px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .btn {
+                font-size: 18px;
+                padding: 12px 30px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div style="text-align: center;">
-        <h1 style="font-size:120px; margin-bottom:2px">Fuck Linux</h1>
-
+    <div class="container">
+        <h1>Fuck Linux</h1>
         <h3>An actually good, heavily opinionated Linux distro.</h3>
 
-        <video width="40%" src="video.webm" controls></video>
+        <video src="video.webm" controls></video>
 
         <br>
-        <br>
-        <button style="font-size: 28px" onclick="window.location.href = 'https://github.com/face-hh/fuck/releases'">Download</button>
-        <br>
-        <a style="font-size: 10px" href="https://github.com/face-hh/fuck" target="_blank">github</a>
+        <a class="btn" href="https://github.com/face-hh/fuck/releases">Download</a>
+        <a class="github-link" href="https://github.com/face-hh/fuck" target="_blank">View on GitHub</a>
     </div>
 </body>
 
